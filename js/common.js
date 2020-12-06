@@ -1,19 +1,19 @@
 (function($) {
     
-    $('.port_inner').slick({
+    $('.port_box').slick({
         autoplay:true,
         dots:false,
-        autoplaySpeed:4500,
-        slidesToShow:5,
-        slidesToScroll:3,
+        autoplaySpeed:10000,
+        slidesToShow:1,
+        slidesToScroll:1,
         pauseOnHover:true,
         pauseOnDotsHover:true,
         pauseOnFocus:true,
         draggable:true,
         fade:false,
         arrows:true,
-        prevArrow:'<button class="prevArrow marrow"><i class="fas fa-caret-left"></i></button>',
-        nextArrow:'<button class="nextArrow marrow"><i class="fas fa-caret-right"></i></button>'
+        prevArrow:'<button class="prevArrow marrow">PREV</button>',
+        nextArrow:'<button class="nextArrow marrow">NEXT</button>'
     })
 
     // nav 클릭시 current 유지
