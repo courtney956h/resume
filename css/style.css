@@ -498,14 +498,14 @@ body { font-family: 'Montserrat'; }
 #footer .nav li a { display: block; 
     padding: 25px; }
 #footer .nav li a.current { color: #55fcf4; }
-#fotter .nav li a.current:after { content: '';
+#footer .nav li a.current:after { content: '';
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -10px;
     border-width: 10px;
     border-style: solid;
-    border-color: #ddd transparent transparent transparent;
+    border-color: #fff transparent transparent transparent;
 }
 
 
