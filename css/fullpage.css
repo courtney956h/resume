@@ -178,9 +178,9 @@ html.fp-enabled,
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
-    width: 10px;
-    height: 10px;
-    margin: -5px 0px 0px -5px;
+    height: 3px;
+    width: 35px;
+    margin: 0 0 0 -15px;
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
