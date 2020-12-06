@@ -12,6 +12,8 @@ body { font-family: 'Montserrat'; }
     overflow: hidden;
     line-height: 0; }
 
+
+
 /* header section */
 #header { color: #fff;
     position: fixed;
@@ -115,6 +117,7 @@ body { font-family: 'Montserrat'; }
     padding: 5px 0; }
     
 
+/* major */
 .major > span { font-size: 15px; 
     padding: 0 5px;
     margin-top: 15px;
@@ -151,6 +154,7 @@ body { font-family: 'Montserrat'; }
     padding: 5px; }
 
 
+/* license */
 .license { padding: 20px 0; 
     border-bottom: 10px solid #000; }
 .license h5 { font-size: 18px;
@@ -168,6 +172,7 @@ body { font-family: 'Montserrat'; }
     display: inline-block; }
 
 
+/* education */
 .education { padding: 10px 0 20px; }
 .education h5 { font-size: 18px;
     padding: 20px 0 5px;
@@ -184,6 +189,7 @@ body { font-family: 'Montserrat'; }
     border-bottom: 1px dashed #000; }
 
 
+/* d_skills */
 .d_skills { padding: 20px 0; 
     border-bottom: 1px dashed #000; }
 .d_skills h5 { font-size: 18px;
@@ -202,6 +208,7 @@ body { font-family: 'Montserrat'; }
     font-weight: bold; } 
 
 
+/* c_skills */
 .c_skills { padding: 10px 0 20px; }
 .c_skills h5 { font-size: 18px;
     padding: 20px 0 5px; 
@@ -270,7 +277,6 @@ body { font-family: 'Montserrat'; }
     background: #000; 
     animation: reactscore 1s both 2s; }
 
-
 @keyframes htmlscore {
     0% { height : 0% }
     100% { height: 80%; }
@@ -297,37 +303,46 @@ body { font-family: 'Montserrat'; }
 
 
 /* Portfolio */
-.port_outer { height: 400px;
+#section2 { height: 100%; 
+    position: relative; }
+.port_box { height: 400px; 
     width: 1200px;
     margin: 0 auto;
+    position: relative; 
     border-radius: 10px;
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3); }
-.port_inner { height: 400px;
-    width: 1200px; }
 
-.port { height: 400px;
-    width: 1200px;  
-    display: flex; 
-    justify-content: space-between;}
+.port_box .port { display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 10px;
+    background: #fff; }
+.port_box .port_img { border-radius: 10px 0 0 10px;
+    background-size: cover;
+    background-repeat: no-repeat; }
+.port_box .port .img1 { 
+    background-image: url(../images/port1-1.png); }
+.port_box .port .img2 { 
+    background-image: url(../images/port2-1.png); }
+.port_box .port .img3 { 
+    background-image: url(../images/port3.png); }
+.port_box .port .img4 { 
+    background-image: url(../images/port4.png); }
+.port_box .port .img5 { 
+    background-image: url(https://via.placeholder.com/600x400); }
+.port_box .port .img6 { 
+    background-image: url(../images/port6.png); }
 
-.port_img img { width: 100%;
-    height: 400px;
-    border-radius: 10px 0 0 10px; }
 
-.port_content { width: 50%; 
-  background: #ffffff; 
-  border-radius: 0 10px 10px 0; }
-
-.port_top { display: flex;
+.port_text .port_top { display: flex;
     justify-content: space-between;
     border-radius: 0 10px 0 0;
     background: #000;
     position: relative; }
-.port_top h2 { font-size: 35px; 
+.port_text .port_top h2 { font-size: 35px; 
   padding: 15px 0 15px 20px;
   color: #55fcf4; }
 
-/* arrow */ 
+/* top arrow */ 
 .port_top .arrow { position: absolute;
     top: 45%; right: 40px;
 	height: 14px; width: 14px;
@@ -346,21 +361,24 @@ body { font-family: 'Montserrat'; }
     border: 1px solid #55fcf4;
 	border-width: 3px 3px 0 0; }
 
-.port_detail { display: flex; }
-.port_text { width: 70%;
-    padding: 45px 30px; }
-.port_text h3 { font-size: 18px; 
-    padding: 5px 0; }
-.port_text span { font-size: 13px;
+.port_content { display: flex; }
+
+
+
+.port_detail { width: 70%;
+    padding: 30px; }
+.port_detail li { padding: 10px 0; }
+.port_detail li h3 { font-size: 18px; 
+    padding-top: 5px; }
+.port_detail li span { font-size: 13px;
     color: #666; 
-    display: block;
-    padding-top: 10px; }
-.port_text span:nth-child(1) { padding-top: 0px; }
-.port_text p { font-size: 15px;
-    padding: 5px 0; }
+    display: block; }
+.port_detail li p { font-size: 15px;
+    padding-top: 5px; }
+
 .port_btn { width: 30%; 
     border-left: 1px dashed #000; 
-    padding: 250px 25px 0; }
+    padding: 270px 25px 0; }
 .port_btn a { font-size: 18px;
     font-weight: bold;
     background: #000;
@@ -370,21 +388,45 @@ body { font-family: 'Montserrat'; }
     padding: 12px 15px; 
     cursor: pointer;
     transition: all 0.5s; }
-.port_btn:hover a { border: 2px solid #55fcf4; 
+.port_btn a:hover { border: 2px solid #55fcf4; 
     background: #55fcf4;
-    color: #000; }    
+    color: #000; } 
+
+
+
+/* slide button */
+.port_box .marrow { font-size: 13px;
+    background: #55fcf4;
+    border-radius: 50%;
+    width: 35px; height: 35px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99; }
+.port_box .prevArrow { left: -60px; }
+.port_box .nextArrow { right: -60px; }
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* contact me */
-
 #section3 { --offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
 
     --move-initial2: calc(-55% + var(--offset));
     --move-final2: calc(-20% + var(--offset)); }
+
 
 /* con_box - marquee */
 /* .con_box { position: relative; } */
@@ -446,7 +488,7 @@ body { font-family: 'Montserrat'; }
 	}
 }
 
-
+/* con_text, copyright */
 .con_text { position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%); 
@@ -481,7 +523,6 @@ body { font-family: 'Montserrat'; }
 
 
 /* footer section */
-
 #footer { color: #fff;
     position: fixed;
     bottom: 0; left: 0; right: 0;
@@ -497,15 +538,14 @@ body { font-family: 'Montserrat'; }
     position: relative; }
 #footer .nav li a { display: block; 
     padding: 25px; }
-#footer .nav li a.current { color: #55fcf4; }
-#footer .nav li a.current:after { content: '';
+#footer .nav li.current a { color: #55fcf4; }
+#footer .nav li.current a:after { content: '';
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -10px;
     border-width: 10px;
     border-style: solid;
-    border-color: #fff transparent transparent transparent;
-}
+    border-color: #fff transparent transparent transparent; }
 
 
