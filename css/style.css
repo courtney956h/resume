@@ -410,15 +410,6 @@ body { font-family: 'Montserrat'; }
 
 
 
-
-
-
-
-
-
-
-
-
 /* contact me */
 #section3 { --offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
@@ -494,12 +485,11 @@ body { font-family: 'Montserrat'; }
     transform: translate(-50%, -50%); 
     background: #fff;
     text-align: center;
-    padding: 40px;
+    padding: 50px 100px;
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
     z-index: 9; }
-.con_text h2 { font-size: 50px;}
-.con_direct h3 { font-size: 25px; 
-    padding: 40px 0; }
+.con_direct h3 { font-size: 30px; 
+    padding-bottom: 40px; }
 .con_direct span { background: #ff0; }
 .con_direct p { font-size: 15px;
     padding: 10px 0 20px; 
