@@ -320,9 +320,9 @@ body { font-family: 'Montserrat'; }
     background-size: cover;
     background-repeat: no-repeat; }
 .port_box .port .img1 { 
-    background-image: url(../images/port1-1.png); }
+    background-image: url(../images/port1.png); }
 .port_box .port .img2 { 
-    background-image: url(../images/port2-1.png); }
+    background-image: url(../images/port2.png); }
 .port_box .port .img3 { 
     background-image: url(../images/port3.png); }
 .port_box .port .img4 { 
@@ -331,6 +331,8 @@ body { font-family: 'Montserrat'; }
     background-image: url(../images/port5.png); }
 .port_box .port .img6 { 
     background-image: url(../images/port6.png); }
+.port_box .port .img7 { 
+    background-image: url(../images/port7.png); }
 
 
 .port_text .port_top { display: flex;
